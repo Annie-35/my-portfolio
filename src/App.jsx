@@ -27,12 +27,23 @@ function App() {
       </section>
 
       {/* About */}
+{/* About */}
       <section id="about" style={{ padding: "3rem 2rem", borderBottom: "1px solid #e5e5e5" }}>
         <p style={{ fontSize: "11px", letterSpacing: "0.15em", textTransform: "uppercase", color: "#3B6D11" }}>About</p>
         <h2 style={{ fontSize: "1.6rem", fontWeight: "600", marginTop: "0.4rem" }}>A multidisciplinary geomatics engineer.</h2>
-        <p style={{ marginTop: "1rem", color: "#555", fontSize: "15px", lineHeight: "1.8", maxWidth: "600px" }}>I'm Ann Gichuhi, a geomatics engineer passionate about turning spatial data into decisions that shape the built environment. I hold a <strong>BSc. Geomatic Engineering & GIS</strong> from DeKUT (2025), with hands-on experience in engineering surveying, land surveying, GIS & remote sensing, and civil works.</p>
+        <p style={{ marginTop: "1rem", color: "#555", fontSize: "15px", lineHeight: "1.8", maxWidth: "600px" }}>
+          Hi! Welcome to my world of geomatics engineering. I'm Ann Gichuhi. I use data to solve everyday problems and make a difference in the built environment.
+        </p>
+        <ul style={{ marginTop: "1rem", color: "#555", fontSize: "15px", lineHeight: "2", maxWidth: "600px", paddingLeft: "1.5rem" }}>
+          <li>Land surveying — boundary demarcation, cadastral and topographic surveys</li>
+          <li>Mapping and GIS analysis — spatial data, satellite imagery, QGIS</li>
+          <li>Engineering surveying — setting out, control networks, as-built documentation</li>
+          <li>Civil works support — construction projects across Kenya</li>
+        </ul>
+        <p style={{ marginTop: "1rem", color: "#555", fontSize: "15px", lineHeight: "1.8", maxWidth: "600px" }}>
+          I'm passionate about geomatics engineering and look forward to working with you on your needs. Check out my portfolio to see my projects!
+        </p>
       </section>
-
       {/* Skills */}
       <section id="skills" style={{ padding: "3rem 2rem", borderBottom: "1px solid #e5e5e5", background: "#f9faf7" }}>
         <p style={{ fontSize: "11px", letterSpacing: "0.15em", textTransform: "uppercase", color: "#3B6D11" }}>What I do</p>
@@ -71,56 +82,36 @@ function App() {
         </div>
       </section>
 
-      {/* Projects */}
-      <section id="projects" style={{ padding: "3rem 2rem", borderBottom: "1px solid #e5e5e5" }}>
-        <p style={{ fontSize: "11px", letterSpacing: "0.15em", textTransform: "uppercase", color: "#3B6D11" }}>Work</p>
-        <h2 style={{ fontSize: "1.6rem", fontWeight: "600", marginTop: "0.4rem" }}>Projects</h2>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "12px", marginTop: "1.5rem" }}>
-          {[
-            { tag: "GIS", title: "Spatial Analysis — Nairobi", desc: "Land use mapping and spatial analysis using satellite imagery and GIS tools." },
-            { tag: "Surveying", title: "Cadastral Survey", desc: "Boundary demarcation and cadastral documentation for a residential development." },
-            { tag: "Civil Works", title: "Construction Setting Out", desc: "Engineering setting out and as-built surveys for a construction project in Kenya." },
-          ].map((project) => (
-            <div key={project.title} style={{ background: "#fff", border: "1px solid #e5e5e5", borderRadius: "10px", padding: "1.2rem" }}>
-              <span style={{ background: "#EAF3DE", color: "#27500A", fontSize: "11px", padding: "3px 10px", borderRadius: "6px" }}>{project.tag}</span>
-              <h3 style={{ fontSize: "14px", fontWeight: "600", marginTop: "0.75rem" }}>{project.title}</h3>
-              <p style={{ fontSize: "12px", color: "#555", marginTop: "6px", lineHeight: "1.5" }}>{project.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Gallery */}
-      <section id="gallery" style={{ padding: "3rem 2rem", background: "#f9faf7" }}>
-        <p style={{ fontSize: "11px", letterSpacing: "0.15em", textTransform: "uppercase", color: "#3B6D11" }}>Gallery</p>
-        <h2 style={{ fontSize: "1.6rem", fontWeight: "600", marginTop: "0.4rem" }}>Work Samples</h2>
-        <div style={{ marginTop: "1.5rem", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "12px" }}>
-          {/* Gallery items would go here */}
-        </div>
-      </section>
+   
 {/* Gallery */}
       <section id="gallery" style={{ padding: "3rem 2rem", borderBottom: "1px solid #e5e5e5" }}>
         <p style={{ fontSize: "11px", letterSpacing: "0.15em", textTransform: "uppercase", color: "#3B6D11" }}>Gallery</p>
         <h2 style={{ fontSize: "1.6rem", fontWeight: "600", marginTop: "0.4rem" }}>Field & GIS work</h2>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "16px", marginTop: "1.5rem" }}>
           {[
-            { title: "Topographic Survey", desc: "Field survey in Nairobi outskirts.", tag: "Surveying" },
-            { title: "GIS Land Use Map", desc: "Spatial analysis output using QGIS.", tag: "GIS" },
-            { title: "Construction Setting Out", desc: "Site engineering on a civil works project.", tag: "Civil Works" },
-            { title: "Cadastral Mapping", desc: "Boundary demarcation documentation.", tag: "Surveying" },
-            { title: "Remote Sensing Output", desc: "Satellite imagery classification.", tag: "GIS" },
-            { title: "Site Fieldwork", desc: "Data collection during engineering survey.", tag: "Fieldwork" },
-          ].map((item) => (
-            <div key={item.title} style={{ background: "#fff", border: "1px solid #e5e5e5", borderRadius: "10px", overflow: "hidden" }}>
-              {/* Image placeholder — replace src with your actual image later */}
-              <div style={{ background: "#EAF3DE", height: "160px", display: "flex", alignItems: "center", justifyContent: "center", color: "#3B6D11", fontSize: "13px" }}>
-                📷 Add image here
-              </div>
-              <div style={{ padding: "0.9rem" }}>
-                <span style={{ background: "#EAF3DE", color: "#27500A", fontSize: "11px", padding: "3px 10px", borderRadius: "6px" }}>{item.tag}</span>
-                <h3 style={{ fontSize: "14px", fontWeight: "600", marginTop: "0.6rem" }}>{item.title}</h3>
-                <p style={{ fontSize: "12px", color: "#555", marginTop: "4px", lineHeight: "1.5" }}>{item.desc}</p>
-              </div>
+            { src: new URL('./assets/1.jpg', import.meta.url).href, desc: "Field survey work" },
+            { src: new URL('./assets/2.jpg', import.meta.url).href, desc: "Field survey work" },
+            { src: new URL('./assets/3.jpg', import.meta.url).href, desc: "Engineering survey" },
+            { src: new URL('./assets/4.jpg', import.meta.url).href, desc: "Survey field work" },
+            { src: new URL('./assets/5.jpg', import.meta.url).href, desc: "Civil supervision & inspection" },
+            { src: new URL('./assets/6.jpg', import.meta.url).href, desc: "Civil setting out" },
+            { src: new URL('./assets/7.jpg', import.meta.url).href, desc: "Civil setting out" },
+            { src: new URL('./assets/8.jpg', import.meta.url).href, desc: "Civil setting out" },
+            { src: new URL('./assets/9.jpg', import.meta.url).href, desc: "Civil setting out" },
+            { src: new URL('./assets/limuru.png', import.meta.url).href, desc: "Limuru area mapping" },
+            { src: new URL('./assets/lst.png', import.meta.url).href, desc: "Land surface temperature analysis" },
+            { src: new URL('./assets/heat mapping.png', import.meta.url).href, desc: "Heat mapping output" },
+            { src: new URL('./assets/parcel editing.png', import.meta.url).href, desc: "Parcel editing — cadastral work" },
+            { src: new URL('./assets/land subdivision.png', import.meta.url).href, desc: "Land subdivision plan" },
+            { src: new URL('./assets/segmentation.png', import.meta.url).href, desc: "Image segmentation analysis" },
+          ].map((item, index) => (
+            <div key={index} style={{ background: "#fff", border: "1px solid #e5e5e5", borderRadius: "10px", overflow: "hidden" }}>
+              <img
+                src={item.src}
+                alt={item.desc}
+                style={{ width: "100%", height: "180px", objectFit: "cover", display: "block" }}
+              />
+              <p style={{ fontSize: "12px", color: "#555", padding: "0.7rem 0.9rem", lineHeight: "1.5" }}>{item.desc}</p>
             </div>
           ))}
         </div>
