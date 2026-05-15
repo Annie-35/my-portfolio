@@ -123,7 +123,7 @@ function App() {
         <p style={{ marginTop: "0.5rem", color: "#120f0f", fontSize: "15px" }}>Open to surveying, GIS and civil works collaborations across Kenya and beyond.</p>
         <div style={{ marginTop: "1.5rem", display: "flex", flexDirection: "column", gap: "10px", maxWidth: "360px" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "12px", background: "#18b8e0", border: "1px solid #e5e5e5", borderRadius: "10px", padding: "0.9rem 1rem", fontSize: "13px", color: "#555" }}>📧 gichuhiannie80@gmail.com</div>
-          <div style={{ display: "flex", alignItems: "center", gap: "12px", background: "#18b8e0s", border: "1px solid #e5e5e5", borderRadius: "10px", padding: "0.9rem 1rem", fontSize: "13px", color: "#555" }}>📍 Nairobi, Kenya</div>
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", background: "#18b8e0", border: "1px solid #e5e5e5", borderRadius: "10px", padding: "0.9rem 1rem", fontSize: "13px", color: "#555" }}>📍 Nairobi, Kenya</div>
         </div>
       </section>
 
